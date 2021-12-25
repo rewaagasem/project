@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">University_project</string>
+    <string name="app_name">Mobile Computing</string>
     <string name="next"><u>Next</u></string>
+    <string name="bmi_analyzer">Bmi Analyzer</string>
+    <string name="required">Required</string>
+    <string name="logout"><u>Logout</u></string>
 </resources>

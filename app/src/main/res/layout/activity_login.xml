@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".ui.auth.LoginActivity"
     android:background="@color/white"
+
     android:orientation="vertical"
     android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BMI Analyzer"
-        android:textColor="#1689D9"
+        android:text="@string/bmi_analyzer"
+        android:textColor="@color/primary_color"
         android:textSize="32sp"
         android:layout_gravity="center"
          />
@@ -32,7 +33,7 @@
             android:gravity="center"
             android:text="Welcome Back"
             android:textSize="24sp"
-            android:textColor="#1689D9"/>
+            android:textColor="@color/primary_color"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,35 +41,34 @@
             android:gravity="center"
             android:text="If you are already have an account, log in"
             android:textSize="16sp"
-            android:textColor="#A3A3A3"
+            android:textColor="@color/hint_color"
             android:layout_marginTop="8dp"/>
 
 
 
         <EditText
-
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_margin="12dp"
-            android:hint="username"
-            android:textColorHint="#B6B6B6"
+            android:layout_margin="16dp"
+            android:hint="Username"
             android:textColor="@color/black"
             android:inputType="text"
             android:layoutDirection="ltr"
             android:textDirection="ltr"
             android:textSize="16sp"
 
-            android:background="@drawable/edit_text_line"
+            android:background="@drawable/ed_background"
             />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/edit_text_line"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ed_background"
+
             >
 
             <EditText
@@ -76,8 +76,7 @@
                 android:layout_width="0dp"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                android:background="@drawable/edit_text_line"
-                android:textColorHint="#B6B6B6"
+                android:background="@drawable/ed_background"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:layoutDirection="ltr"
@@ -93,14 +92,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_password_hidden"/>
+                android:src="@drawable/ic_hide_password"/>
 
             <ImageView
                 android:id="@+id/show_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_password_show"
+                android:src="@drawable/ic_show_bassword"
                 android:visibility="gone"/>
 
 
@@ -111,8 +110,8 @@
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="42dp"
-            android:background="@drawable/button_ripple"
+            android:layout_margin="32dp"
+            android:background="@drawable/ripple_button_background"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@color/white"/>
@@ -134,12 +133,12 @@
                 android:textSize="16sp"
                  />
             <TextView
-                android:id="@+id/go_to_signup"
+                android:id="@+id/signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text=" Sign up"
-                android:textColor="#1689D9"
+                android:textColor="@color/primary_color"
                 android:textSize="16sp"
                  />
         </LinearLayout>

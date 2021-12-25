@@ -1,4 +1,4 @@
-package com.rewaaqasem.university_project_android;
+package com.rewaagasem.university_project_android;
 
 import org.junit.Test;
 
